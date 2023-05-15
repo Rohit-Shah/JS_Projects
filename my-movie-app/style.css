@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.navbar-heading{
+    font-weight: 660;
+    color: gray;
+}
+.navbar img{
+    width: 6rem;
+}
+.navbar-heading:hover{
+    color: aliceblue;
+}
+.heading-genre{
+    text-transform: capitalize;
+}
+.genres{
+    font-size: 0.9rem;
+}
+
+/* all movies container */
+.movie-image{
+    width: 14rem;
+    height: 23rem;
+}
+.movie-btn:hover{
+    outline: none !important;
+}
+.modal-content{
+    color: black;
+}
+/* end of all movies container */

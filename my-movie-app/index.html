@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-heading" href="/index.html">
+                <img src="IMG/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Now Playing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/index.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres
+                        </a>
+                        <ul class="dropdown-menu genres" aria-labelledby="navbarDropdown">
+                            <li><a class="action dropdown-item" href="#">Action</a></li>
+                            <li><a class="adventure dropdown-item" href="#">Adventure</a></li>
+                            <li><a class="animation dropdown-item" href="#">Animation</a></li>
+                            <li><a class="comedy dropdown-item" href="#">Comedy</a></li>
+                            <li><a class="crime dropdown-item" href="#">Crime</a></li>
+                            <li><a class="drama dropdown-item" href="#">Drama</a></li>
+                            <li><a class="family dropdown-item" href="#">Family</a></li>
+                            <li><a class="fantasy dropdown-item" href="#">Fantasy</a></li>
+                            <li><a class="history dropdown-item" href="#">History</a></li>
+                            <li><a class="horror dropdown-item" href="#">Horror</a></li>
+                            <li><a class="music dropdown-item" href="#">Music</a></li>
+                            <li><a class="romance dropdown-item" href="#">Romance</a></li>
+                            <li><a class="sci_fi dropdown-item" href="#">Science Fiction</a></li>
+                            <li><a class="thriller dropdown-item" href="#">Thriller</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Github Repo</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 input" type="search" placeholder="Search Movies" aria-label="Search">
+                    <button class="btn btn-outline-light search" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- main body -->
+    <div class="container">
+        <h1 class="heading-genre">Now Playing</h1>
+        <div class="row all-movies">
+        </div>
+    </div>
+
+    <!-- main body ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
