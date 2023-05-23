@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="myStyle.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container outer-container">
+        <div class="weather-card">
+            <h3 class="title">Weather</h3>
+            <div class="alert alert-danger">Couldn't find the location</div>
+            <div class="input-group mb-3">
+                <input type="text" class="city-input form-control" placeholder="Enter City Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="btn btn-sm btn-primary" id="get-weather">Search</button>
+              </div>
+            <img class="weather-image" src="./icons/unknown.png" alt="logo">
+            <div class="text-center temperature">-</div>
+            <div class="text-center weather-type">-</div>
+            <div class="text-center place">-</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</body>
+</html>
