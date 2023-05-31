@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <input class="task-input title" placeholder="Enter title" type="text">
+            <textarea placeholder="Enter task" class="task-input text"></textarea>
+            <input class="date task-input" type="date">
+            <input class="time task-input" type="time">
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- notes -->
+    <div class="container">
+        <h1 class="text-center">Your Notes</h1>
+        <button class="btn btn-sm primary sort">Sort</button>
+        <hr>
+        <div class="note-container row">
+            <!-- cards -->
+            <!-- <div class="card your-note">
+                <h3 class="note-title">Title</h3>
+                <div class="note-text">This is a text input for this title</div>
+                <div class="due-date">Complete By : </div>
+                <div class="features">
+                    <button class="btn-sm edit">Edit</button><button class="btn-sm delete">Delete</button><button class="btn-sm archieve">Archieve</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- deleted notes section -->
+    <div class="container">
+        <h1 class="text-center">Deleted Notes</h1>
+        <hr>
+        <div class="deleted-note-container row">
+            
+        </div>
+    </div>
+
+    <!-- archieved notes section -->
+    <div class="container">
+        <h1 class="text-center">Archieve Notes</h1>
+        <hr>
+        <div class="archieve-note-container row">
+            
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
